@@ -1,1 +1,1 @@
-# CinekidAR
+# Cinekid
