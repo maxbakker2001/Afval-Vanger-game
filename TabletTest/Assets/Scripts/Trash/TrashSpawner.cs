@@ -23,7 +23,7 @@ public class TrashSpawner : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        _pool = new ObjectPool<Trash>(() => Instantiate(trashPrefab, GetSpawnLocation(), Quaternion.identity), trash =>
+        _pool = new ObjectPool<Trash>(() => Instantiate(trashPrefab, GetSpawnLocation(), Random.rotation), trash =>
         {
             trash.gameObject.SetActive(true);
         }, trash =>
