@@ -9,17 +9,19 @@ public class TrashSpawner : MonoBehaviour
 {
     private ObjectPool<Trash> _pool;
 
-    [Header("References")] 
+    [Header("References")]
     [SerializeField] private Trash trashPrefab;
+
     [SerializeField] private SpawnPoint[] spawnPoints;
-    
-    [Header("Variables")] 
+
+    [Header("Variables")]
     [SerializeField] private int trashCount = 10;
+
     [SerializeField] private int maxTrash = 20;
     [SerializeField] private int spawnFrequency = 5;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         _pool = new ObjectPool<Trash>(() => Instantiate(trashPrefab, GetSpawnLocation(), Quaternion.identity), trash =>
         {
@@ -30,8 +32,8 @@ public class TrashSpawner : MonoBehaviour
         }, trash =>
         {
             Destroy(trash.gameObject);
-        },false,trashCount,maxTrash);
-        
+        }, false, trashCount, maxTrash);
+
         InvokeRepeating(nameof(Spawn), 0.1f, spawnFrequency);
     }
 
@@ -42,7 +44,8 @@ public class TrashSpawner : MonoBehaviour
 
     private void Spawn()
     {
-        _pool.Get();
+        var shape = _pool.Get();
+        shape.Init(KillTrash);
     }
 
     private Vector3 GetSpawnLocation()
