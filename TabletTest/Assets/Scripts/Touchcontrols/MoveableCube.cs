@@ -21,13 +21,13 @@ public class MoveableCube : MonoBehaviour
 
     private void Update()
     {
-        debugText.text = transform.position.x.ToString() + " / " + touchActions.TouchPosition.WasPerformedThisFrame();
+        debugText.text = transform.position.x.ToString();
 
         if (!touchActions.TouchPosition.WasPerformedThisFrame())
             return;
 
         Vector2 touchScreenInput = touchActions.TouchPosition.ReadValue<Vector2>();
-        float xInput = touchScreenInput.x / 1000f - .8f;
+        float xInput = touchScreenInput.x / 5000f - .16f;
 
         transform.position = new Vector3(xInput, transform.position.y, transform.position.z);
     }
