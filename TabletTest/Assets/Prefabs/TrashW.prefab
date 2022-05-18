@@ -42,13 +42,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8733a699fb58adb42aa508b7084d2843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterHeight: 3.22
+  waterHeight: 3.57
   UnderwaterDrag: 3
   UnderwaterAngularDrag: 1
-  FloatingPower: 15.3
+  FloatingPower: 15
   AirDrag: 0
   AirAngularDrag: 0.05
-  WaypointMoveSpeed: 1.07
+  WaypointMoveSpeed: 1
   Waypoints:
   - {fileID: 8979801748284819805}
   - {fileID: 8979801748177297705}
@@ -100,13 +100,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8733a699fb58adb42aa508b7084d2843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterHeight: 3.22
+  waterHeight: 3.57
   UnderwaterDrag: 3
   UnderwaterAngularDrag: 1
-  FloatingPower: 15.3
+  FloatingPower: 15
   AirDrag: 0
   AirAngularDrag: 0.05
-  WaypointMoveSpeed: 1.07
+  WaypointMoveSpeed: 1
   Waypoints:
   - {fileID: 8979801748284819805}
   - {fileID: 8979801748177297705}
@@ -158,13 +158,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8733a699fb58adb42aa508b7084d2843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterHeight: 3.22
+  waterHeight: 3.57
   UnderwaterDrag: 3
   UnderwaterAngularDrag: 1
-  FloatingPower: 15.3
+  FloatingPower: 15
   AirDrag: 0
   AirAngularDrag: 0.05
-  WaypointMoveSpeed: 1.07
+  WaypointMoveSpeed: 1
   Waypoints:
   - {fileID: 8979801748284819805}
   - {fileID: 8979801748177297705}
