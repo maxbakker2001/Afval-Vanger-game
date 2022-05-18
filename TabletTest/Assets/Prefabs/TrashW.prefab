@@ -16,34 +16,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3166349508555175569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4796240057999467955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8733a699fb58adb42aa508b7084d2843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waterHeight: 3.57
-  UnderwaterDrag: 3
-  UnderwaterAngularDrag: 1
-  FloatingPower: 15
-  AirDrag: 0
-  AirAngularDrag: 0.05
-  WaypointMoveSpeed: 1
-  Waypoints:
-  - {fileID: 8979801748284819805}
-  - {fileID: 8979801748177297705}
-  - {fileID: 8979801746483913473}
-  - {fileID: 8979801746571314480}
-  - {fileID: 8979801747212358765}
-  - {fileID: 8979801746648660326}
-  - {fileID: 8979801747613146761}
-  CurrentWaypoint: 0
 --- !u!64 &9190523847324917135
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -58,6 +30,34 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4503343270115065248, guid: b088b562997709347891597e81bc81cb, type: 3}
+--- !u!114 &3166349508555175569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4796240057999467955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8733a699fb58adb42aa508b7084d2843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterHeight: 3.22
+  UnderwaterDrag: 3
+  UnderwaterAngularDrag: 1
+  FloatingPower: 15.3
+  AirDrag: 0
+  AirAngularDrag: 0.05
+  WaypointMoveSpeed: 1.07
+  Waypoints:
+  - {fileID: 8979801748284819805}
+  - {fileID: 8979801748177297705}
+  - {fileID: 8979801746483913473}
+  - {fileID: 8979801746571314480}
+  - {fileID: 8979801747212358765}
+  - {fileID: 8979801746648660326}
+  - {fileID: 8979801747613146761}
+  CurrentWaypoint: 0
 --- !u!54 &7838967182944943355
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -74,34 +74,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6551221631559071217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4876199537871508408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8733a699fb58adb42aa508b7084d2843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waterHeight: 3.57
-  UnderwaterDrag: 3
-  UnderwaterAngularDrag: 1
-  FloatingPower: 15
-  AirDrag: 0
-  AirAngularDrag: 0.05
-  WaypointMoveSpeed: 1
-  Waypoints:
-  - {fileID: 8979801748284819805}
-  - {fileID: 8979801748177297705}
-  - {fileID: 8979801746483913473}
-  - {fileID: 8979801746571314480}
-  - {fileID: 8979801747212358765}
-  - {fileID: 8979801746648660326}
-  - {fileID: 8979801747613146761}
-  CurrentWaypoint: 0
 --- !u!64 &6014232087145548821
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -116,6 +88,34 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1855923187887352656, guid: 1959b41d0cde95645ae5a523a75304fc, type: 3}
+--- !u!114 &6551221631559071217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4876199537871508408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8733a699fb58adb42aa508b7084d2843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterHeight: 3.22
+  UnderwaterDrag: 3
+  UnderwaterAngularDrag: 1
+  FloatingPower: 15.3
+  AirDrag: 0
+  AirAngularDrag: 0.05
+  WaypointMoveSpeed: 1.07
+  Waypoints:
+  - {fileID: 8979801748284819805}
+  - {fileID: 8979801748177297705}
+  - {fileID: 8979801746483913473}
+  - {fileID: 8979801746571314480}
+  - {fileID: 8979801747212358765}
+  - {fileID: 8979801746648660326}
+  - {fileID: 8979801747613146761}
+  CurrentWaypoint: 0
 --- !u!54 &4130630280725206767
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -132,34 +132,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1344184012547075812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6591420965150541705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8733a699fb58adb42aa508b7084d2843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waterHeight: 3.57
-  UnderwaterDrag: 3
-  UnderwaterAngularDrag: 1
-  FloatingPower: 15
-  AirDrag: 0
-  AirAngularDrag: 0.05
-  WaypointMoveSpeed: 1
-  Waypoints:
-  - {fileID: 8979801748284819805}
-  - {fileID: 8979801748177297705}
-  - {fileID: 8979801746483913473}
-  - {fileID: 8979801746571314480}
-  - {fileID: 8979801747212358765}
-  - {fileID: 8979801746648660326}
-  - {fileID: 8979801747613146761}
-  CurrentWaypoint: 0
 --- !u!64 &458266180970009555
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -174,6 +146,34 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1467693233396669395, guid: 8f7a4b99e6027d14ab73d53ee6250e23, type: 3}
+--- !u!114 &1344184012547075812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6591420965150541705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8733a699fb58adb42aa508b7084d2843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterHeight: 3.22
+  UnderwaterDrag: 3
+  UnderwaterAngularDrag: 1
+  FloatingPower: 15.3
+  AirDrag: 0
+  AirAngularDrag: 0.05
+  WaypointMoveSpeed: 1.07
+  Waypoints:
+  - {fileID: 8979801748284819805}
+  - {fileID: 8979801748177297705}
+  - {fileID: 8979801746483913473}
+  - {fileID: 8979801746571314480}
+  - {fileID: 8979801747212358765}
+  - {fileID: 8979801746648660326}
+  - {fileID: 8979801747613146761}
+  CurrentWaypoint: 0
 --- !u!1 &8979801746483913473
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 8979801748525313941}
   m_Layer: 0
   m_Name: TrashW
-  m_TagString: Untagged
+  m_TagString: trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -624,6 +624,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9154826103085017080, guid: cac910536d2da6c429c2e4798b661dd1, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cac910536d2da6c429c2e4798b661dd1, type: 3}
 --- !u!4 &5778891130186505523 stripped
@@ -650,6 +654,10 @@ PrefabInstance:
     - target: {fileID: 328712121597294074, guid: bd045075ed593414d99c8c7f94ef2dc3, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 328712121597294074, guid: bd045075ed593414d99c8c7f94ef2dc3, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1136034390117953344, guid: bd045075ed593414d99c8c7f94ef2dc3, type: 3}
       propertyPath: m_RootOrder
@@ -721,6 +729,10 @@ PrefabInstance:
     - target: {fileID: 1208013755688093181, guid: ad748a639e241af44bc7d013c5794239, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208013755688093181, guid: ad748a639e241af44bc7d013c5794239, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1983952943713574727, guid: ad748a639e241af44bc7d013c5794239, type: 3}
       propertyPath: m_RootOrder
