@@ -7,6 +7,7 @@ public class ObjectLevelUp : MonoBehaviour
     [Header("levels")]
     public GameObject[] Diffrentstages;
 
+    public bool DeActivateObjectTurnOf = false;
     public bool DoLevelUp = false;
     [SerializeField] private int Level = 0;
 
@@ -25,9 +26,12 @@ public class ObjectLevelUp : MonoBehaviour
         }
     }
 
-    private void levelUP()
+    public void levelUP()
     {
-        Diffrentstages[Level].gameObject.SetActive(false);
+        if (DeActivateObjectTurnOf == true)
+        {
+            Diffrentstages[Level].gameObject.SetActive(false);
+        }
         Level++;
         Diffrentstages[Level].gameObject.SetActive(true);
     }
