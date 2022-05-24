@@ -6,6 +6,7 @@ TagManager:
   tags:
   - trash
   - Netjes
+  - Waypoints
   layers:
   - Default
   - TransparentFX

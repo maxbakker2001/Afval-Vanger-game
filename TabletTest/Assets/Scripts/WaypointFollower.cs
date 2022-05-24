@@ -5,10 +5,15 @@ using UnityEngine;
 public class WaypointFollower : MonoBehaviour
 {
     public float MoveSpeed;
+    public float rotationSpeed;
 
     public bool RandomWaypointPicker = false;
 
+    [Header("Waypoint Info")]
+    public bool UpdateWaypointPos = false;
+
     [SerializeField] private int CurrentWaypoint = 0;
+
     [SerializeField] private GameObject[] Waypoints;
 
     private void Start()
@@ -29,6 +34,14 @@ public class WaypointFollower : MonoBehaviour
         }
 
         transform.position = Vector3.MoveTowards(transform.position, Waypoints[CurrentWaypoint].transform.position, Time.deltaTime * MoveSpeed);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(-Waypoints[CurrentWaypoint].transform.position), Time.deltaTime * rotationSpeed);
+
+        if (UpdateWaypointPos == true)
+        {
+            UpdateWaypointPos = false;
+
+            Waypoints = GameObject.FindGameObjectsWithTag("Waypoints");
+        }
     }
 
     private void RandomWaypoint()
@@ -39,7 +52,7 @@ public class WaypointFollower : MonoBehaviour
             CurrentWaypoint = Random.Range(0, Waypoints.Length);
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, Waypoints[CurrentWaypoint].transform.position, Time.deltaTime * MoveSpeed);
+        transform.position = Vector3.MoveTowards(transform.position, Waypoints[CurrentWaypoint].transform.position, rotationSpeed * Time.deltaTime);
     }
 
     private void looping()
