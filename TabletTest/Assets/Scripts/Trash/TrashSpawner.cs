@@ -1,20 +1,16 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Pool;
 using Random = UnityEngine.Random;
 
 public class TrashSpawner : MonoBehaviour
 {
 
-    [Header("References")]
+
     [SerializeField] private Trash trashPrefab;
 
     [SerializeField] private SpawnPoint[] spawnPoints;
 
 
-    [SerializeField] private int spawnFrequency = 5;
+    [SerializeField] private float spawnFrequency = 1.7f;
 
     // Start is called before the first frame update
     private void Start()
@@ -34,6 +30,4 @@ public class TrashSpawner : MonoBehaviour
         var i = Random.Range(0, spawnPoints.Length);
         return spawnPoints[i].returnPosition();
     }
-
-
 }
