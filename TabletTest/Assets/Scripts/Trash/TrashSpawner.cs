@@ -5,7 +5,7 @@ public class TrashSpawner : MonoBehaviour
 {
 
 
-    [SerializeField] private Trash trashPrefab;
+    [SerializeField] private Trash [] trashPrefab;
 
     [SerializeField] private SpawnPoint[] spawnPoints;
 
@@ -22,7 +22,8 @@ public class TrashSpawner : MonoBehaviour
 
     private void Spawn()
     {
-        Instantiate(trashPrefab, GetSpawnLocation(), transform.rotation);
+        var i = Random.Range(0, trashPrefab.Length);
+        Instantiate(trashPrefab[i], GetSpawnLocation(), Random.rotation);
     }
 
     private Vector3 GetSpawnLocation()

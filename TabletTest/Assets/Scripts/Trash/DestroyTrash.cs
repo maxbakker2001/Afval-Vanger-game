@@ -1,6 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class DeletePlastic : MonoBehaviour
+public class DestroyTrash : MonoBehaviour
 {
     [SerializeField] private GameObject[] Trash;
 
