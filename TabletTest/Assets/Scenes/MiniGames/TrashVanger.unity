@@ -222,8 +222,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.07594857, y: 0.047779344, z: 0.075948566}
-  m_Center: {x: 0, y: 9.313226e-10, z: -0.000000009313226}
+  m_Size: {x: 0.07594857, y: 0.047779344, z: 1.1734837}
+  m_Center: {x: 0, y: 0, z: 0.5487668}
 --- !u!114 &47493341 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4798513355914886347, guid: f0eed80b7a3ce62448137f5f6560f080, type: 3}
