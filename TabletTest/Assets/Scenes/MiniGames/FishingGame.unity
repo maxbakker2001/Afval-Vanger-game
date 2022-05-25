@@ -193,6 +193,38 @@ PrefabInstance:
     m_TransformParent: {fileID: 950795547}
     m_Modifications:
     - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ee438e4c6c15494095ff86dd381b86c, type: 2}
+    - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
+      propertyPath: m_Parameters.numCapVertices
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
+      propertyPath: m_Positions.Array.data[0].x
+      value: -0.020001622
+      objectReference: {fileID: 0}
+    - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
+      propertyPath: m_Positions.Array.data[0].y
+      value: 9.997664
+      objectReference: {fileID: 0}
+    - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
+      propertyPath: m_Positions.Array.data[0].z
+      value: 22.969822
+      objectReference: {fileID: 0}
+    - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
+      propertyPath: m_Positions.Array.data[1].y
+      value: -13.827381
+      objectReference: {fileID: 0}
+    - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: -11.292852
+      objectReference: {fileID: 0}
+    - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
+      propertyPath: m_Parameters.colorGradient.ctime1
+      value: 64764
+      objectReference: {fileID: 0}
+    - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.b
       value: 0
       objectReference: {fileID: 0}
@@ -206,15 +238,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
       propertyPath: m_Parameters.colorGradient.key1.b
-      value: 0.38679248
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
       propertyPath: m_Parameters.colorGradient.key1.g
-      value: 0.38679248
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
       propertyPath: m_Parameters.colorGradient.key1.r
-      value: 0.38679248
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0.0026474
+      objectReference: {fileID: 0}
+    - target: {fileID: 654962128319198180, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.02366829
       objectReference: {fileID: 0}
     - target: {fileID: 4887561345236457304, guid: 1fea149db15e1234d8b68aa90a3cbc41, type: 3}
       propertyPath: fishingrod

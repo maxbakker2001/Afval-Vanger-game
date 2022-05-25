@@ -11,7 +11,7 @@ public class RotateIsland : MonoBehaviour
 
     private void Update()
     {
-        if (RotateWithTouch == false)
+        if (!RotateWithTouch)
         {
             AutoRotate();
         }
