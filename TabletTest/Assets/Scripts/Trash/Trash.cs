@@ -7,7 +7,8 @@ public class Trash : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.name != "Fishnet")
+            Destroy(gameObject);
     }
 
     private void Update()
