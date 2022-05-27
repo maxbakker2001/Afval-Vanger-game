@@ -8,6 +8,7 @@ public class ObjectLevelUp : MonoBehaviour
     public GameObject[] Diffrentstages;
 
     public float growAmount;
+    public float growTime;
 
     public bool DeActivateObjectTurnOf = false;
     public bool DoLevelUp = false;
@@ -24,9 +25,8 @@ public class ObjectLevelUp : MonoBehaviour
         if (DoLevelUp == true) //transition toevoegen iets van particles en the jumping via code
         {
             DoLevelUp = false;
-            gameObject.transform.localScale += new Vector3(0, growAmount, 0);
+            transform.localScale = Vector3.Lerp(transform.localScale, transform.localScale + new Vector3(0, growAmount, 0), growTime * Time.deltaTime);
             levelUP();
-            gameObject.transform.localScale -= new Vector3(0, growAmount, 0);
         }
     }
 
@@ -38,5 +38,6 @@ public class ObjectLevelUp : MonoBehaviour
         }
         Level++;
         Diffrentstages[Level].gameObject.SetActive(true);
+        // transform.localScale = Vector3.Lerp(transform.localScale, transform.localScale - new Vector3(0, growAmount, 0), growTime * Time.deltaTime);
     }
 }
