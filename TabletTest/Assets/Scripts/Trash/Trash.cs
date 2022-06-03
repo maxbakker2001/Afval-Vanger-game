@@ -4,16 +4,17 @@ public class Trash : MonoBehaviour
 {
     [SerializeField]
     private float grafity;
+    public  bool grav;
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name != "Fishnet")
+        if (collision.gameObject.name == "Fishnet")
             Destroy(gameObject);
     }
 
-    private void Update()
+    private void Awake()
     {
-        grafity = Random.Range(-5, 0.3f);
-        transform.Translate(0, grafity * Time.deltaTime, 0, Space.World);
+        gameObject.GetComponent<Rigidbody>().drag = Random.Range(20, 35);
     }
+
 }
