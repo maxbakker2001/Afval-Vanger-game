@@ -11,11 +11,12 @@ public class Fish : MonoBehaviour
     void Update()
     {
         if (closest != null && closest.transform.position.y <= 0.6f)
-            transform.position = Vector3.MoveTowards(transform.position, closest.transform.position, speed * Time.deltaTime);
-        else
         {
-            transform.Translate(speed * Time.deltaTime, 0, 0);
+            transform.LookAt(closest.transform.position);
+            transform.position = Vector3.MoveTowards(transform.position, closest.transform.position, speed * Time.deltaTime);
         }
+        else
+            transform.Translate(speed * Time.deltaTime, 0, 0);
 
         FindClosestTrash();
     }
