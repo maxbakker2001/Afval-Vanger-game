@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class DestroyTrash : MonoBehaviour
 {
-    [SerializeField] private GameObject[] Trash;
-
-    private void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        Trash = GameObject.FindGameObjectsWithTag("trash");
-    }
-
-    public void DestroyRandomTrash()
-    {
-        Destroy(Trash[Random.Range(0, Trash.Length)]);
+        Destroy(collision.gameObject);
     }
 }
