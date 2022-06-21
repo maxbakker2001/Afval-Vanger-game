@@ -5,7 +5,7 @@ using UnityEngine;
 public class Fish : MonoBehaviour
 {
     public GameObject closest;
-    public float speed;
+    public float speed = 0.5f;
     float distance = 1;
   
     void Update()
@@ -15,9 +15,12 @@ public class Fish : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, closest.transform.position, speed * Time.deltaTime);
         }
         else
-            transform.Translate(speed * Time.deltaTime, 0, 0);
+            transform.Translate(Vector3.right * speed * Time.deltaTime);
 
         FindClosestTrash();
+
+        if (gameObject.transform.position.x >= 2.5f)
+            Destroy(gameObject);
     }
 
 
@@ -38,6 +41,8 @@ public class Fish : MonoBehaviour
             }
         }
     }
+
+
 
  
 }
