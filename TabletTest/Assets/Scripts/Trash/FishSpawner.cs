@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FishSpawner : MonoBehaviour
 {
-   [SerializeField] private GameObject Fishprefab;
+    [SerializeField] private GameObject[] Fishprefab;
 
     [SerializeField] SpawnPoint[] spawnpoints;
 
@@ -12,11 +12,13 @@ public class FishSpawner : MonoBehaviour
 
     void SpawnFish()
     {
-        Instantiate(Fishprefab, GetTransform(), transform.rotation);
+        var i = Random.Range(0, Fishprefab.Length);
+        var g = Instantiate(Fishprefab[i], GetTransform(), Fishprefab[i].transform.rotation);
+        g.transform.parent = GameObject.Find("FishPile").transform;
     }
 
     private void Start()
-    {
+    { 
         InvokeRepeating(nameof(SpawnFish), 0.1f, spawnFreq);
     }
 

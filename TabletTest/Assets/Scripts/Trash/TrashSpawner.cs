@@ -1,10 +1,8 @@
+using System.Collections;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class TrashSpawner : MonoBehaviour
 {
-
-
     [SerializeField] private Trash [] trashPrefab;
 
     [SerializeField] private SpawnPoint[] spawnPoints;
@@ -15,15 +13,19 @@ public class TrashSpawner : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        InvokeRepeating(nameof(Spawn), 0.1f, spawnFrequency);
+        InvokeRepeating(nameof(Spawn), 0f, spawnFrequency);
     }
 
+    IEnumerator SpawnFreq()
+    {
+        yield return new WaitForSeconds(20f);
+    }
 
-
-    private void Spawn()
+    private void Spawn() // spawn one random trash
     {
         var i = Random.Range(0, trashPrefab.Length);
-        Instantiate(trashPrefab[i], GetSpawnLocation(), Random.rotation);
+        var g = Instantiate(trashPrefab[i], GetSpawnLocation(), Random.rotation);
+        g.transform.parent = GameObject.Find("TrashPile").transform;
     }
 
     private Vector3 GetSpawnLocation()
