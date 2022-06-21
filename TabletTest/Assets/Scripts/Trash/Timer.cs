@@ -7,6 +7,8 @@ using UnityEngine.UI;
 using TMPro;
 public class Timer : MonoBehaviour
 {
+    public GameOverScreen GameOverScreen;
+
 
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] float currentTime;
@@ -28,11 +30,8 @@ public class Timer : MonoBehaviour
         text.text = "Time: " + time.ToString(@"mm\:ss");
         if (currentTime <= 0)
         {
-            ResetScene();
+            GameOverScreen.GameOver(Fishnet.counter);
         }
     }
-    void ResetScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+
 }

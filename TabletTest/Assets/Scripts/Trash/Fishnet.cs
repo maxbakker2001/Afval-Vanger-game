@@ -6,7 +6,7 @@ using TMPro;
 public class Fishnet : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI counterText;
-    private float counter;
+    public static float counter;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,6 +14,7 @@ public class Fishnet : MonoBehaviour
         {
             Destroy(other.gameObject);
             counter += .1f;
+            counter = Mathf.Round(counter * 10.0f) * .1f;
 
         }
     }
