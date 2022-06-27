@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1012827969710731542, guid: 9e5e2aa93553e0544a1679defabb7dda, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0247
+      value: -0.0298
       objectReference: {fileID: 0}
     - target: {fileID: 2181261129281423993, guid: 9e5e2aa93553e0544a1679defabb7dda, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -165,6 +165,10 @@ PrefabInstance:
     - target: {fileID: 3236083109712468660, guid: 9e5e2aa93553e0544a1679defabb7dda, type: 3}
       propertyPath: m_Size.z
       value: 0.18850932
+      objectReference: {fileID: 0}
+    - target: {fileID: 3236083109712468660, guid: 9e5e2aa93553e0544a1679defabb7dda, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3236083109712468660, guid: 9e5e2aa93553e0544a1679defabb7dda, type: 3}
       propertyPath: m_Center.y
@@ -259,6 +263,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8668863570721344073, guid: 9e5e2aa93553e0544a1679defabb7dda, type: 3}
   m_PrefabInstance: {fileID: 29232976}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &29232978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8288362537504461043, guid: 9e5e2aa93553e0544a1679defabb7dda, type: 3}
+  m_PrefabInstance: {fileID: 29232976}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &29232979
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29232978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 379010558040167564, guid: 59ef433291f80284e8bc91c951e45f3c, type: 3}
 --- !u!1001 &37556892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1229,6 +1252,10 @@ PrefabInstance:
     - target: {fileID: 5014206609930940083, guid: 35ffd42b53a650f46a53267375e423f8, type: 3}
       propertyPath: m_Name
       value: Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014206609930940083, guid: 35ffd42b53a650f46a53267375e423f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8616903668445141622, guid: 35ffd42b53a650f46a53267375e423f8, type: 3}
       propertyPath: m_RootOrder
