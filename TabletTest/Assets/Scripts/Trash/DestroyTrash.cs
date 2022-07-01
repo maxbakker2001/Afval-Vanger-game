@@ -6,9 +6,9 @@ public class DestroyTrash : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (gameObject.CompareTag("trash"))
+        if (collision.gameObject.GetComponent<Trash>())
         {
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
         }
     }
 }

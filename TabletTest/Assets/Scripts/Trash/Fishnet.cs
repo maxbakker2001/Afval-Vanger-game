@@ -8,18 +8,23 @@ public class Fishnet : MonoBehaviour
     [SerializeField] private TextMeshProUGUI counterText;
     public static float counter;
 
-    private void OnTriggerEnter(Collider other)
-    {
+    public ShakeNet ShakeNet;
+    public ParticleSystem ps;
+    
+
+    private void OnCollisionEnter(Collision other)
+    { 
         if (other.gameObject.GetComponent<Trash>())
         {
             Destroy(other.gameObject);
+            ShakeNet.Begin();
+            ps.Play();
             counter += .1f;
             counter = Mathf.Round(counter * 10.0f) * .1f;
-
         }
     }
 
-    private void Start()
+    private void Awake()
     {
         counter = 0;
     }
@@ -28,4 +33,6 @@ public class Fishnet : MonoBehaviour
     {
         counterText.text = "Kg afval: " + counter;
     }
+
+ 
 }
