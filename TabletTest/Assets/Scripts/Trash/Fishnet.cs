@@ -8,7 +8,6 @@ public class Fishnet : MonoBehaviour
     [SerializeField] private TextMeshProUGUI counterText;
     public static float counter;
 
-    public ShakeNet ShakeNet;
     public ParticleSystem ps;
     
 
@@ -17,7 +16,6 @@ public class Fishnet : MonoBehaviour
         if (other.gameObject.GetComponent<Trash>())
         {
             Destroy(other.gameObject);
-            ShakeNet.Begin();
             ps.Play();
             counter += .1f;
             counter = Mathf.Round(counter * 10.0f) * .1f;
